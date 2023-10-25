@@ -103,7 +103,18 @@ yarn build
 
 - Investigate and tackle these build issues.
 - Document any changes made and the reasons behind them.
-- Note: Successfully resolving all issues is a plus, but not mandatory. The primary focus is on your problem-solving approach and the steps you take to debug and resolve.
+- Note: **Successfully resolving all issues is a plus, but not mandatory.** The primary focus is on your problem-solving approach and the steps you take to debug and resolve.
+
+## **🌟 Submission Guidelines**
+
+Once you have tackled the challenges, please follow these steps:
+
+1. Create a new Git repository for your project.
+2. Begin with an initial commit of the provided boilerplate code.
+3. As you make progress, commit your changes regularly. This helps in tracking the steps you've taken and the modifications you've made.
+4. Once completed, ensure that your repository is public, and share the link to the repo with us.
+
+Remember, the journey and your approach to problem-solving are just as important as the final solution. Your commit history gives us insight into your thought process.
 
 ## **📚 Project Dependencies**
 
