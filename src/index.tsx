@@ -3,8 +3,8 @@ import {ScreensParams} from './types';
 import {NavigationContainer} from '@react-navigation/native';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {Platform, SafeAreaView, StatusBar} from 'react-native';
-import Screen1 from './Screen1';
-import Screen2 from './Screen2';
+import Screen1 from './screens/Screen1';
+import Screen2 from './screens/Screen2';
 
 const {Navigator, Screen} = createNativeStackNavigator<ScreensParams>();
 

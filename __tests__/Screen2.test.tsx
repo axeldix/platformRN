@@ -1,5 +1,5 @@
 import React from 'react';
-import Screen2 from '../src/Screen2';
+import Screen2 from '../src/screens/Screen2';
 import {describe, it, expect} from '@jest/globals';
 import renderer from 'react-test-renderer';
 

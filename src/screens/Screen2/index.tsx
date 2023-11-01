@@ -2,7 +2,7 @@ import {type FC, memo} from 'react';
 
 import {Platform, Pressable, Text, View} from 'react-native';
 
-import {useNavigation} from './utils';
+import {useNavigation} from '../../utils';
 
 const Screen2: FC = () => {
   const {goBack} = useNavigation();

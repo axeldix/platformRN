@@ -1,7 +1,7 @@
 import {type FC, memo, useCallback} from 'react';
 
 import {View, Text, Pressable} from 'react-native';
-import {useNavigation} from './utils';
+import {useNavigation} from '../../utils';
 
 const Screen1: FC = () => {
   const {navigate} = useNavigation();
