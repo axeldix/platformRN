@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
+    "test:watch": "jest --watch",
     "build": "vite build",
     "preview": "vite preview"
   },

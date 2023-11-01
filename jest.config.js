@@ -1,3 +1,6 @@
-module.exports = {
-  preset: 'react-native',
+module.exports = async () => {
+  return {
+    preset: 'react-native',
+    verbose: true,
+  };
 };
