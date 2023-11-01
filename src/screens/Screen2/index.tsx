@@ -1,6 +1,7 @@
 import {type FC, memo} from 'react';
 
-import {Platform, Pressable, Text, View} from 'react-native';
+import {Platform} from 'react-native';
+import {StyledButton, StyledButtonText, Title, Wrapper} from './styled';
 
 import {useNavigation} from '../../utils';
 
@@ -10,40 +11,14 @@ const Screen2: FC = () => {
   const screenName = 'Screen2';
 
   return (
-    <View
-      style={{
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: 'rgba(67,241,181,0.3)',
-      }}>
-      <Text
-        style={{
-          fontSize: 50,
-          fontWeight: 'bold',
-          marginBottom: 20,
-        }}>
-        {screenName}
-      </Text>
+    <Wrapper>
+      <Title>{screenName}</Title>
       {Platform.OS === 'web' && (
-        <Pressable
-          style={{
-            backgroundColor: '#b8e378',
-            padding: 10,
-            borderRadius: 5,
-          }}
-          onPress={() => goBack()}>
-          <Text
-            style={{
-              fontSize: 20,
-              fontWeight: 'bold',
-              color: 'white',
-            }}>
-            Go Back
-          </Text>
-        </Pressable>
+        <StyledButton onPress={() => goBack()}>
+          <StyledButtonText>Go Back</StyledButtonText>
+        </StyledButton>
       )}
-    </View>
+    </Wrapper>
   );
 };
 
