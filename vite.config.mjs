@@ -23,8 +23,7 @@ export default defineConfig({
     global: 'window',
     __DEV__: JSON.stringify(development),
     DEV: JSON.stringify(development),
-    'process.<wbr>env': {},
-    // 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
   },
   resolve: {
     alias: {
