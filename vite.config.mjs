@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+import {defineConfig} from 'vite';
 import react from '@vitejs/plugin-react-swc';
 
 const extensions = [
@@ -23,10 +23,13 @@ export default defineConfig({
     global: 'window',
     __DEV__: JSON.stringify(development),
     DEV: JSON.stringify(development),
-    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+    'process.<wbr>env': {},
+    // 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
   },
   resolve: {
     alias: {
+      'react-native/Libraries/Renderer/shims/ReactFabric':'react-native/Libraries/Renderer/shims/ReactFabric',
+      'react-native/Libraries/Renderer/shims/ReactNative':'react-native/Libraries/Renderer/shims/ReactNative',
       'react-native': 'react-native-web',
     },
     preserveSymlinks: process.env.NODE_ENV === 'production',
