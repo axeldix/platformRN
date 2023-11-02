@@ -24,7 +24,7 @@ export default defineConfig({
     react(),
     reactRefresh(),
     resolve({
-      extensions: ['.js', '.ts'],
+      extensions: extensions,
     }),
   ],
   define: {
@@ -50,6 +50,7 @@ export default defineConfig({
       replacement: '$1',
     },
     preserveSymlinks: process.env.NODE_ENV === 'production',
+    extensions,
   },
   build: {
     commonjsOptions: {
